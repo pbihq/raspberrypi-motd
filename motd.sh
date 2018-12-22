@@ -123,7 +123,7 @@ header="$header$borderBar$(color $headerRaspberryColor "         (  : '~' :  )  
 header="$header$borderBar$(color $headerRaspberryColor "          '~ .~~~. ~'                                                         ")$borderBar\n"
 header="$header$borderBar$(color $headerRaspberryColor "              '~'                                                             ")$borderBar"
 
-me=$(logname)
+me=$(whoami)
 
 # Greetings
 greetings="$borderBar$(color $greetingsColor "$(center "Welcome back, $me!")")$borderBar\n"
