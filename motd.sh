@@ -1,7 +1,5 @@
 #!/bin/bash
 
-clear
-
 color() {
   echo "\e[$1m$2\e[0m"
 }
