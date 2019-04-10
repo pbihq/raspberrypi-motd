@@ -173,7 +173,10 @@ getDNSServer
 labelDNS="$(extend "$dns_servers")"
 labelDNS="$borderBar  $(color $statsLabelColor "DNS Server....:") $labelDNS$borderBar"
 
-stats="$labelHostname\n$labelIPs\n$labelDNS\n$borderEmptyLine\n$labelLogin\n$labelUptime\n$borderEmptyLine\n$labelRAM\n$labelDisk\n$labelTemperature"
+labelActiveStream="$(extend "$ACTIVE_STREAM")"
+labelActiveStream="$borderBar  $(color $statsLabelColor "Active Stream.:") $labelActiveStream$borderBar"
+
+stats="$labelHostname\n$labelIPs\n$labelDNS\n$borderEmptyLine\n$labelLogin\n$labelUptime\n$borderEmptyLine\n$labelRAM\n$labelDisk\n$labelTemperature\n$borderEmptyLine\n$labelActiveStream"
 
 # Print motd
 echo -e "$header\n$borderEmptyLine\n$greetings\n$borderEmptyLine\n$stats\n$borderEmptyLine\n$borderBottomLine"
